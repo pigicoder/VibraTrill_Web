@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instrument Window</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="instrument-window">       
+        <!-- Top Buttons -->
+        <div class="logo">
+            <img src="../images/VibraTrillLogo.png" alt="Logo">
+        </div>
+        <div class="top-buttons">
+            <div class="col">
+                <!-- Logo -->                   
+            </div>
+                
+            <div class="col">
+                <!-- Pulsanti con immagini -->
+                <button id="btnConnect" class="round-button">
+                    <img src="../images/Connect.png" alt="Connect">
+                </button>
+                <button id="btnCalibrateOpen" class="round-button">
+                    <img src="../images/EyeOpen.png" alt="Calibrate Open">
+                </button>
+                <button id="btnCalibrateClosed" class="round-button">
+                    <img src="../images/EyeClosed.png" alt="Calibrate Closed">
+                </button>
+                <button id="btnEffects" class="round-button">
+                    <img src="../images/slider.png" alt="Effects">
+                </button>
+                <button id="btnPanic" class="round-button">
+                    <img src="../images/panic.png" alt="Panic">
+                </button>
+                <button id="btnReset" class="round-button">
+                    <img src="../images/Reset.png" alt="Reset">
+                </button>
+                <button id="btnToneControl" class="round-button">
+                    <img src="../images/transpose.png" alt="Tone Control">
+                </button>
+                <button id="btnExit" class="round-button">
+                    <img src="../images/exit.png" alt="Exit">
+                </button>
+            </div>
+        </div>
+
+        <div class="row"> 
+        <!-- Note Area -->
+        <div class="note-area">
+            <div class="note" data-note="C">C</div>
+            <div class="note" data-note="D">D</div>
+            <div class="note" data-note="E">E</div>
+            <div class="note" data-note="F">F</div>
+            <div class="note" data-note="G">G</div>
+            <div class="note" data-note="A">A</div>
+            <div class="note" data-note="B">B</div>
+            <div class="note" data-note="C2">C2</div>
+        </div>       
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    background-image: url('../images/images1.png');
+    background-size: cover; /* Assicura che l'immagine copra l'intera area */
+    background-position: center; /* Centra l'immagine */
+    background-repeat: no-repeat; /* Evita che l'immagine si ripeta */
+    font-family: Arial, sans-serif;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.instrument-window {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    background-image: url('images/images1.png');
+    background-size: cover;
+}
+
+.top-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.round-button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.round-button img {
+    width: 60px;
+    height: 60px;
+}
+
+.note-border {
+    border: 3px solid black; /* Specifica la cornice */
+    border-radius: 10px; /* Se vuoi arrotondare gli angoli */
+    padding: 20px; /* Spazio interno attorno alle note */
+    display: inline-block; /* Assicura che il contenitore si adatti al contenuto */
+}
+
+.logo img {
+    position: relative;
+    width: 60px;
+    height:205px;
+    margin: 0;
+    left: 0; /* Sposta il logo all'estrema sinistra */
+    float: left;
+}
+
+/* Area delle note */
+.note-area {
+    position: relative;
+    width: 1200px;  /* Dimensioni aumentate */
+    height: 600px; /* Dimensioni aumentate */
+    margin: 0 auto;
+    border: 1px solid black; /* Per vedere l'area delle note */
+    overflow: hidden; /* Assicura che tutto rimanga visibile */
+    background-color: black;
+}
+
+/* Note come cerchi */
+.note {
+    position: absolute; /* Posizionamento assoluto per permettere il calcolo delle coordinate */
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s ease; /* Aggiunge animazione fluida */
+}
+
+
+.logo img {
+    width: 200px;
+}
